@@ -19,10 +19,8 @@ public class PeakAndDocumentExecutionOrderTests extends BaseTest {
         System.out.println("BeforeTest...\n");
     }
 
-
-
     @BeforeMethod
-    public void bbbbbb(){
+    public void subClassBeforeMethod(){
         System.out.println("BeforeMethod...");
     }
 
