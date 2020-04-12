@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test NG grouping xml suites demo" verbose="1">
+    <suite-files>
+        <suite-file path="test_1_order.xml"/>
+        <suite-file path="test_2_assertions.xml"/>
+        <suite-file path="test_3_groups.xml"/>
+        <suite-file path="test_4_parameters.xml"/>
+        <suite-file path="test_5_whole_suite.xml"/>
+        <suite-file path="test_6_listeners_suite.xml"/>
+    </suite-files>
+</suite>

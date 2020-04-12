@@ -10,7 +10,7 @@
         <!--The parameter's scope is only for this test-->
         <parameter name="expectedDay" value="TUESDAY"/>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentParameterTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentParameterTests" />
         </classes>
     </test>
 
@@ -18,7 +18,7 @@
         <!--The parameter's scope is only for this test-->
         <parameter name="expectedDay" value="FRIDAY"/>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentParameterTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentParameterTests" />
         </classes>
     </test>
 </suite>

@@ -1,8 +1,8 @@
-package com.globant.qasummit.tests;
+package com.globant.testngdemo.tests;
 
 import academy.PeakAndDocumentManagerStatic;
 import academy.PeakAndDocumentMgr;
-import com.globant.qasummit.dataprovider.DocumentsProvider;
+import com.globant.testngdemo.dataprovider.DocumentsProvider;
 import org.testng.annotations.*;
 
 import java.time.DayOfWeek;
@@ -11,34 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static  org.testng.Assert.*;
-public class PeakAndDocumentFunctionalTests {
-
-    private PeakAndDocumentMgr mgr;
-
-
-    @BeforeSuite
-    public void setupManager(){
-        System.out.println("BeforeSuite...\n");
-
-    }
-
-    @BeforeClass(alwaysRun = true)
-    public void beforeClass(){
-        System.out.println("BeforeClass...");
-        mgr = new PeakAndDocumentManagerStatic();
-        System.out.println();
-    }
-
-    @BeforeTest
-    public void beforeTest(){
-        System.out.println("BeforeTest...\n");
-    }
-
-    @BeforeMethod
-    public void beforeMethod(){
-        System.out.println("BeforeMethod...");
-        mgr = new PeakAndDocumentManagerStatic();
-    }
+public class PeakAndDocumentFunctionalTests  extends BaseTest{
 
     @Test
     public void checkAtLeastTwoDigitsPerDay(){

@@ -1,5 +1,5 @@
 # testNG-demo
-A set of testNG xml suite demonstrating its main features
+A set of testNG xml suites demonstrating its main features
 
 
 # Usage
@@ -7,7 +7,7 @@ Open the project with your preferred IDE and run it with TestNG plugin
 
 OR
 
-#with maven
+# With maven
 
 run the following command
 

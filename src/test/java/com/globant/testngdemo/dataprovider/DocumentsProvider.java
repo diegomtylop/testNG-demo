@@ -1,4 +1,4 @@
-package com.globant.qasummit.dataprovider;
+package com.globant.testngdemo.dataprovider;
 
 import org.testng.annotations.DataProvider;
 

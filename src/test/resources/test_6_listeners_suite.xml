@@ -3,17 +3,17 @@
 <suite name="Test NG listeners demo" verbose="1">
 
     <listeners>
-        <listener class-name="com.globant.qasummit.listeners.TestsListener"/>
+        <listener class-name="com.globant.testngdemo.listeners.TestsListener"/>
     </listeners>
 
-    <test name="Test business rules" >
+    <test name="TestNG listeners" >
         <groups>
             <run>
                 <exclude name="tdd"/>
             </run>
         </groups>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentFunctionalTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentFunctionalTests" />
         </classes>
     </test>
 </suite>

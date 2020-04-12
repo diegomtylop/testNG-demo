@@ -9,7 +9,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentAssertionsTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentAssertionsTests" />
         </classes>
     </test>
 
@@ -21,7 +21,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentFunctionalTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentFunctionalTests" />
         </classes>
     </test>
 
@@ -32,7 +32,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.globant.qasummit.tests.PeakAndDocumentFunctionalTests" />
+            <class name="com.globant.testngdemo.tests.PeakAndDocumentFunctionalTests" />
         </classes>
     </test>
 </suite>

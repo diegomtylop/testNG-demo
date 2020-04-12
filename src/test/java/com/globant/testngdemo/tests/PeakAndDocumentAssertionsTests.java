@@ -1,23 +1,12 @@
-package com.globant.qasummit.tests;
+package com.globant.testngdemo.tests;
 
-import academy.PeakAndDocumentManagerStatic;
-import academy.PeakAndDocumentMgr;
 import org.testng.annotations.*;
 import java.time.DayOfWeek;
 import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class PeakAndDocumentAssertionsTests {
-
-    private PeakAndDocumentMgr mgr;
-
-    @BeforeClass(groups = {"group1","group2"},alwaysRun = true)
-    public void setupManager(){
-        System.out.println("BeforeSuite...");
-        mgr = new PeakAndDocumentManagerStatic();
-        System.out.println();
-    }
+public class PeakAndDocumentAssertionsTests extends BaseTest{
 
     //Basic boolean assertion
     @Test(priority = 1,groups = {"group1"})

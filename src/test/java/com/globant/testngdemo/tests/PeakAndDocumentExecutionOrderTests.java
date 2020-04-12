@@ -1,7 +1,7 @@
-package com.globant.qasummit.tests;
+package com.globant.testngdemo.tests;
 import org.testng.annotations.*;
 
-public class PeakAndDocumentExecutionOrderTests {
+public class PeakAndDocumentExecutionOrderTests extends BaseTest {
 
     //BEFORE
     @BeforeSuite
@@ -9,18 +9,20 @@ public class PeakAndDocumentExecutionOrderTests {
         System.out.println("BeforeSuite...\n");
     }
 
-    @BeforeClass
-    public void beforeClass(){
-        System.out.println("BeforeClass...\n");
-    }
-
     @BeforeTest
-    public void beforeTest(){
+    public void subClassBeforeTest(){
         System.out.println("BeforeTest...\n");
     }
 
+    @BeforeClass
+    public void subClassBeforeClass(){
+        System.out.println("BeforeTest...\n");
+    }
+
+
+
     @BeforeMethod
-    public void beforeMethod(){
+    public void bbbbbb(){
         System.out.println("BeforeMethod...");
     }
 

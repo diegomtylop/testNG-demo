@@ -1,4 +1,4 @@
-package com.globant.qasummit.listeners;
+package com.globant.testngdemo.listeners;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

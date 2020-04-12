@@ -1,26 +1,10 @@
-package com.globant.qasummit.tests;
+package com.globant.testngdemo.tests;
 
-import academy.PeakAndDocumentManagerStatic;
-import academy.PeakAndDocumentMgr;
 import org.testng.annotations.*;
-
 import java.time.DayOfWeek;
-
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class PeakAndDocumentParameterTests {
-
-
-    private PeakAndDocumentMgr mgr;
-
-
-    @BeforeClass
-    public void setupManager(){
-        System.out.println("BeforeSuite...");
-        mgr = new PeakAndDocumentManagerStatic();
-        System.out.println();
-    }
+public class PeakAndDocumentParameterTests  extends BaseTest{
 
     @Parameters({"documentToValidate","expectedDay"})
     @Test
