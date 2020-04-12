@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test NG parameters demo" verbose="1">
+
+    <!--Global parameter, this parameter is available to be used in all the tests within this XML-->
+    <parameter name="documentToValidate" value="1122334455"/>
+
+    <test name="Passing parameters" >
+
+        <!--The parameter's scope is only for this test-->
+        <parameter name="expectedDay" value="TUESDAY"/>
+        <classes>
+            <class name="com.globant.qasummit.tests.PeakAndDocumentParameterTests" />
+        </classes>
+    </test>
+
+    <test name="Passing parameters 2" >
+        <!--The parameter's scope is only for this test-->
+        <parameter name="expectedDay" value="FRIDAY"/>
+        <classes>
+            <class name="com.globant.qasummit.tests.PeakAndDocumentParameterTests" />
+        </classes>
+    </test>
+</suite>
