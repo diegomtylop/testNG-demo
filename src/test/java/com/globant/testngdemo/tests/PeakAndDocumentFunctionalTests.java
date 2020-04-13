@@ -51,7 +51,7 @@ public class PeakAndDocumentFunctionalTests  extends BaseTest{
         }
     }
 
-    @Test(dataProvider = "document-provider",dataProviderClass = DocumentsProvider.class,groups = "tdd")
+    @Test(dataProvider = "document-provider",dataProviderClass = DocumentsProvider.class,groups = "ddt")
     public void checkWithMultipleDocuments(String document) {
         List<DayOfWeek> availableDays = mgr.getDaysPerDocument( document );
 

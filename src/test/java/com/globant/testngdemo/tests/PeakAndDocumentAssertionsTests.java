@@ -1,6 +1,8 @@
 package com.globant.testngdemo.tests;
 
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+
 import java.time.DayOfWeek;
 import java.util.List;
 
@@ -111,5 +113,24 @@ public class PeakAndDocumentAssertionsTests extends BaseTest{
                         "4354354350?",
                         DayOfWeek.THURSDAY
                 ));
+    }
+
+
+    @Test(priority = 8)
+    public void checkSoftAssertions(){
+        SoftAssert soft = new SoftAssert();
+
+        soft.assertTrue( false );
+
+        System.out.println("At this point the first assertion already failed");
+        soft.assertFalse( true , "We expected a false value");
+
+        System.out.println("At this point there are two assertions failed");
+        soft.assertTrue( true );
+
+        System.out.println("This assertion mark the test as failed");
+        soft.assertAll();
+
+        System.out.println("This statement is not reached because the assertion failed");
     }
 }

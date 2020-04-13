@@ -28,7 +28,7 @@
     <test name="Data Driven Test" >
         <groups>
             <run>
-                <include name="tdd"/>
+                <include name="ddt"/>
             </run>
         </groups>
         <classes>
